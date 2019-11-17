@@ -241,10 +241,10 @@ function handleConnecting(request, response) {
     })
     .then(() => wifi.defineNetwork(ssid, password))
     .then(() => wifi.waitForWiFi(20, 3000))
-    .then(() => wifi.broadcastBeacon())
+    //.then(() => wifi.broadcastBeacon()) DONT NEED IT FOR AVOCADO
     .then(() => {
       console.log('start the gateway');
-      startGateway();
+      //startGateway(); DONT NEED IT FOR AVOCADO
       console.log('stop wifi setup');
       stopWifiService();
     })

@@ -1,5 +1,5 @@
 [Unit]
-Description=Mozilla WebThings Gateway Wifi Setup
+Description=Avocado Wifi Setup
 After=network.target
 
 [Service]

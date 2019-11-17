@@ -276,20 +276,19 @@
         }
       }
     </script>
-    <title>Mozilla Gateway</title>
+    <title>Avocado Wifi Setup</title>
   </head>
   <body>
     <form action="/connecting" method="post" id="mainform">
       <div id="step1">
         <div id="maindiv">
-          <h1>Welcome</h1>
-          <h3>Connect to a WiFi network?</h3><br>
+          <h1>Welcome to Avocado Wifi Setup</h1>
+          <h3>Please connect to you WiFi network</h3><br>
           {{#networks}}
             <button onclick="window.selectssid(event, '{{{escapeQuotes ssid}}}', {{pwdRequired}})" id="item"
                     class="item ssid"><div id="text-ssid">{{ssid}}</div> <img id='wifi-icon' src='/{{icon}}'>
             </button>
           {{/networks}}<br><br>
-          <button onclick="window.skip(event)" class="item skip">Skip</button>
         </div>
       </div>
       <div id="step2">
@@ -309,7 +308,6 @@
       </div>
       <input id="ssid" name="ssid" type="hidden" value="">
       <input id="skip" name="skip" type="hidden" value="">
-      <img id="wordmark" alt="Mozilla IoT" src="/moziot-wordmark.png" />
     </form>
   </body>
 </html>
